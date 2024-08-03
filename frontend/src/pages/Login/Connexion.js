@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import eye from "../../assets/Icons/eye.svg";
 import { NavLink } from "react-router-dom";
 
-const Register = () => {
+const Connexion = () => {
   const [email, setEmail] = useState("");
   const [validEmail, setValidEmail] = useState(false);
   const [pwd, setPwd] = useState("");
@@ -108,11 +108,11 @@ const Register = () => {
           Je m'inscrit
         </button>
       </form>
-      <NavLink to="/connexion">
-        <button className="my-4">Déja un compte ?</button>{" "}
+      <NavLink to="/register">
+        <button className="my-4">Inscrivez-vous</button>{" "}
       </NavLink>
     </section>
   );
 };
 
-export default Register;
+export default Connexion;
