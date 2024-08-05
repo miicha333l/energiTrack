@@ -100,16 +100,22 @@ const Connexion = () => {
                 : "Mot de passe non valide, minimum 6 caractère, 1 majuscule, 1 minuscule, 1 chiffre, un caractère special : #?!@$ %^&*-"
               : ""}
           </span>
-
-         
-            
+        </div>
+        <div>
+          <input type="checkbox" />
+          Se souvenir de moi
         </div>
         <button type="submit" className=" bg-orange-500 rounded-xl p-2 mt-2">
-          Je m'inscrit
+          Se connecter
         </button>
       </form>
+      <div>
+      <NavLink to="#">
+        <button>Mot de passe oublié ?</button>{" "}
+      </NavLink>
+      </div>
       <NavLink to="/register">
-        <button className="my-4">Inscrivez-vous</button>{" "}
+        <button className="my-2">Pas encore inscrit ? Crée un compte</button>{" "}
       </NavLink>
     </section>
   );
